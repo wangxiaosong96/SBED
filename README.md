@@ -57,19 +57,6 @@ The interaction signs are defined as follows:
 - **Bonanza:** Signs correspond to positive and negative buyer–seller feedback.
 - **MovieLens-1M and Amazon-Book:** Ratings of 4 or 5 are positive; ratings of 1, 2, or 3 are negative.
 
-Dataset access and local placement:
-
-```text
-[TO_FILL: dataset download links, required filenames, and local data paths]
-```
-
-Input format:
-
-```text
-[TO_FILL: exact input columns, header convention, node indexing, and sign encoding expected by the data loader]
-```
-
-The two node partitions must remain distinct throughout data preparation, even when their local node identifiers overlap.
 
 ## Experimental Protocol
 
@@ -166,29 +153,6 @@ Hyperparameters are selected using validation AUC. The search spaces are provide
 [TO_FILL: exact command or script for all five runs]
 ```
 
-### Additional experiments
-
-| Experiment | Manuscript section | Command or script |
-| --- | --- | --- |
-| Main comparison | Section 4.2 | [TO_FILL: command or script] |
-| Ablation study | Section 4.3 | [TO_FILL: command or script] |
-| Parameter sensitivity | Section 4.4 | [TO_FILL: command or script] |
-| Efficiency | Section 4.5 | [TO_FILL: command or script] |
-| Equilibrium approximation | Section 4.6 | [TO_FILL: command or script] |
-| Performance–runtime trade-off | Section 4.7 | [TO_FILL: command or script] |
-
-## Main Results
-
-The following table reports mean AUC and Macro-F1 over five runs. Table 2 of the manuscript provides the complete comparison, including Binary-F1 and Micro-F1.
-
-| Dataset | AUC | Macro-F1 |
-| --- | ---: | ---: |
-| Review | 0.811 | 0.810 |
-| Senate | 0.864 | 0.862 |
-| Bonanza | 0.656 | 0.674 |
-| House1to10 | 0.886 | 0.878 |
-| MovieLens-1M | 0.754 | 0.747 |
-| Amazon-Book | 0.756 | 0.680 |
 
 ## Reproducibility
 
