@@ -15,27 +15,22 @@ SBED combines four components:
 
 The sparse equilibrium representation avoids explicitly forming or inverting the dense equilibrium matrix.
 
-## Requirements
+## Reference Software Environment
 
-SBED uses Python and PyTorch. The hardware and software configurations used in our experiments are listed below.
+The following software configuration is provided as a reference based on the [SigFJProp README](https://github.com/SunYubo23/SigFJProp/blob/master/README.md).
 
-| Item | Experimental configuration |
+| Software | Reference version |
 | --- | --- |
-| Operating system | [TO_FILL: operating system and version] |
-| CPU | [TO_FILL: CPU model] |
-| System memory | [TO_FILL: RAM capacity] |
-| GPU | [TO_FILL: GPU model and device count] |
-| GPU memory | [TO_FILL: memory per GPU] |
-| Python | [TO_FILL: exact Python version] |
-| PyTorch | [TO_FILL: exact PyTorch version] |
-| CUDA | [TO_FILL: CUDA version, or CPU-only] |
-| Other dependencies | [TO_FILL: dependency file path and package versions] |
+| Python | 3.9 |
+| PyTorch | 2.3.0 |
+| NumPy | 1.23 |
+| pandas | 1.5.3 |
+| SciPy | 1.13 |
+| scikit-learn | 1.6.1 |
+| tqdm | 4.67.1 |
+| texttable | 1.7.0 |
 
-Install the required dependencies:
-
-```text
-[TO_FILL: exact environment creation and dependency installation commands]
-```
+The example torch-scatter wheel provided by SigFJProp targets Python 3.9, PyTorch 2.3, and CUDA 11.8 on 64-bit Windows. These versions describe the reference configuration; the environment used for the SBED experiments must be verified separately.
 
 ## Datasets
 
